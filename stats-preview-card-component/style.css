@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+@import "../styles/base.css";
+
+:root {
+  --col-main-bg: hsl(233, 47%, 7%);
+  --col-card-bg: hsl(244, 38%, 16%);
+  --col-accent: hsl(277, 64%, 61%);
+  --col-main-heading-stats: hsl(0, 0%, 100%);
+  --col-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --col-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  background-color: var(--col-main-bg);
+  color: var(--col-main-heading-stats);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  padding: 8.8rem 2.4rem;
+}
+
+h1 {
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  line-height: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+h2 {
+  letter-spacing: 1px;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  color: var(--col-main-paragraph);
+  line-height: 2.5rem;
+}
+
+b {
+  color: var(--col-accent);
+}
+
+.card {
+  background-color: var(--col-card-bg);
+  border-radius: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 45rem;
+}
+
+.card__img {
+  background-blend-mode: multiply;
+  background-color: var(--col-accent);
+  background-image: url('./images/image-header-mobile.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem 1rem 0 0;
+  height: 24rem;
+  width: 100%;
+}
+
+.card__body {
+  padding: 3.6rem 3rem;
+}
+
+.card__content {
+  margin-bottom: 4rem;
+}
+
+.card__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.card__stats span {
+  color: var(--col-stat-headings);
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 870px) {
+  body {
+    padding: 17.7rem 2.4rem;
+  }
+  h1 {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+    margin-bottom: 2.5rem;
+    min-width: 40.4rem;
+  }
+  p {
+    max-width: 38.6rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    text-align: left;
+    height: 44.6rem;
+    max-width: 111rem;
+  }
+  .card__img {
+    border-radius: 0 1rem 1rem 0;
+    flex: 48.65%;
+    height: 100%;
+  }
+  .card__body {
+    flex: 51.35%;
+    padding: 7.1rem 7rem 6.3rem 7.3rem;
+  }
+  .card__content {
+    margin-bottom: 7.2rem;
+  }
+  .card__stats {
+    flex-direction: row;
+    gap: 6.5rem;
+  }
+  .card__stats span {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.7px;
+  }
+}
