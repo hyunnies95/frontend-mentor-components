@@ -37,11 +37,11 @@ p {
 .card {
   background-color: var(--col-white);
   border-radius: 2rem;
+  box-shadow: 0px 20px 37px -11px rgba(34, 60, 80, 0.1);
   text-align: center;
   padding: 1.6rem 1.6rem 4.1rem;
   margin: 8.5rem auto 0;
   max-width: 32rem;
-
 }
 
 .card img {
